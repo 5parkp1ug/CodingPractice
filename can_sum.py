@@ -1,4 +1,5 @@
-def can_sum(targetSum, arr, memo = {}):
+def can_sum(targetSum: int, arr: list, memo = None) -> bool:
+	if memo == None: memo = {}
 
 	if targetSum in memo: return memo[targetSum]
 
@@ -7,10 +8,9 @@ def can_sum(targetSum, arr, memo = {}):
 
 	for num in arr:
 		remainder = targetSum - num
-		if remainder >= 0:
-			if can_sum(remainder, arr, memo):
-				memo[targetSum] = True
-				return True
+		if can_sum(remainder, arr, memo):
+			memo[targetSum] = True
+			return True
 	
 	memo[targetSum] = False
 	return False

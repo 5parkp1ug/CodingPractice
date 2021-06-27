@@ -1,4 +1,6 @@
-def how_sum(targetSum, arr, memo={}):
+def how_sum(targetSum: int, arr: list, memo=None) -> list:
+
+	if memo == None: memo = {}
 
 	if targetSum == 0: return []
 	if targetSum in memo: return memo[targetSum]
