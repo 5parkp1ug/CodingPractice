@@ -1,3 +1,9 @@
+#!/usr/bin/env python3
+# ==============================================================================
+# Created By   : 5parkp1ug
+# Description  : find number of ways to create string using list of strings
+# ==============================================================================
+
 def all_construct(targetStr: str, arr: list, memo = None) -> bool:
 	if memo == None: memo = {}
 

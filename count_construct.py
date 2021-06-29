@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+# ==============================================================================
+# Created By   : 5parkp1ug
+# Description  : Count number of ways a given word can be generated using 
+#                another given list of words
+# ============================================================================
+
 def count_construct(targetStr: str, arr: list, memo = None) -> bool:
 	if memo == None: memo = {}
 

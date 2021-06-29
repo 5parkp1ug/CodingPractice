@@ -1,3 +1,11 @@
+#!/usr/bin/env python3
+# ==============================================================================
+# Created By   : 5parkp1ug
+# Description  : Given an array arr[] of integers and an integer K, 
+#                the task is to print all subsets of the given array with the sum 
+#                equal to the given target K.
+# ==============================================================================
+
 def best_sum(targetSum: int, arr: list, memo={}) -> list:
 
 	if targetSum in memo: return memo[targetSum]
@@ -19,7 +27,7 @@ def best_sum(targetSum: int, arr: list, memo={}) -> list:
 	return shortest_combination
 
 if __name__ == '__main__':
-	print(best_sum(7, [5, 3, 4, 7]))
-	print(best_sum(8, [2, 3, 5]))
-	print(best_sum(8, [1, 4, 5]))
-	print(best_sum(100, [1, 2, 5, 25]))
+	print(best_sum(7, [5, 3, 4, 7]))  # Result: [7]
+	print(best_sum(8, [2, 3, 5]))  # Result: [3, 5]
+	print(best_sum(8, [1, 4, 5]))  # Result: [4, 4]
+	print(best_sum(100, [1, 2, 5, 25]))  # Result: [25, 25, 25, 25]

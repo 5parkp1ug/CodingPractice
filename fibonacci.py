@@ -1,3 +1,8 @@
+#!/usr/bin/env python3
+# ==============================================================================
+# Created By   : 5parkp1ug
+# Description  : Fibonacci series via memoization
+# ============================================================================
 def fibonacci(count, memo={}):
 	if count in memo: return memo[count]
 
