@@ -2,8 +2,8 @@
 # ==============================================================================
 # Created By   : 5parkp1ug
 # Description  : Given an array arr[] of integers and an integer K, 
-#                the task is to print all subsets of the given array with the sum 
-#                equal to the given target K.
+#                the task is to print smallest subset of the given array with 
+#                the sum equal to the given target K.
 # ==============================================================================
 
 def best_sum(targetSum: int, arr: list, memo={}) -> list:
