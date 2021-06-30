@@ -22,4 +22,8 @@ def grid_traveller(grid: tuple, memo: dict = None) -> int :
     return no_of_ways
 
 if __name__ == '__main__':
-    print(grid_traveller((18,18)))
+    print(grid_traveller((1,1)))  # Result: 1
+    print(grid_traveller((2,3)))  # Result: 3
+    print(grid_traveller((3,2)))  # Result: 3
+    print(grid_traveller((3,3)))  # Result: 6
+    print(grid_traveller((18,18)))  # Result: 2333606220
