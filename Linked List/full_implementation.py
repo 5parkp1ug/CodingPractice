@@ -1,3 +1,10 @@
+#!/usr/bin/env python3
+# ==============================================================================
+# Created By   : 5parkp1ug
+# Description  : Linked list implementation with Insert, Delete, Search and
+#                Traverse operations
+# ==============================================================================
+
 def success(message):
     return f'\033[92m{message}\033[0m'
 
