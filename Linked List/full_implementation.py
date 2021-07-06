@@ -102,6 +102,9 @@ class LinkedList:
         print(success(f'The size of the list is {count}'))
 
     def traverse(self):
+        if self.head == None: 
+            print(warning('Empty list'))
+            return
         current_node = self.head
         while current_node != None:
             print(current_node.data)
