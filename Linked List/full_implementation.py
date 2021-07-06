@@ -23,7 +23,7 @@ class LinkedList:
             self.head = node
             return
 
-        count = 0
+        count = 1
         current_node = self.head
         while(count != pos-1):
             current_node = current_node.next
@@ -41,6 +41,21 @@ class LinkedList:
         self.head = node
         node.next = first_node
         return
+
+    def search(self, item):
+        count = 1
+        found = False
+        current_node = self.head
+        while current_node:
+            if current_node.data == item:
+                print(f'Item found at the position {count}')
+                found = True
+                break
+            current_node = current_node.next
+            count += 1
+        if not found:
+            print('Item not found in the list')
+        
 
     def size(self) -> int:
 
@@ -82,7 +97,8 @@ if __name__ == '__main__':
             pass
 
         elif option == 3:
-            pass
+            item = input('Enter the item to search: ')
+            linked_list.search(item)
 
         elif option == 4:
             print('='*15, 'TRAVERSE OPERATION', '='*15)
