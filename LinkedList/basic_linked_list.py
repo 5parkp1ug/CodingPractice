@@ -1,4 +1,3 @@
-#!/usr/bin/env python3
 # ==============================================================================
 # Created By   : 5parkp1ug
 # Description  : Basic Linked list implementation

@@ -1,27 +1,9 @@
-#!/usr/bin/env python3
 # ==============================================================================
 # Created By   : 5parkp1ug
 # Description  : Reversing linked list by reversing the links consecutively 
 # ==============================================================================
 
-class Node:
-
-    def __init__(self, data) -> None:
-        self.data = data
-        self.next = None  # Initial assignment to None as no node connection exists by default      
-
-class LinkedList:
-
-    def __init__(self) -> None:
-        self.head = None
-    
-    def traverse(self):
-        disp = ''
-        current_node = self.head
-        while current_node != None:
-            disp += f'{current_node.data} --> '
-            current_node = current_node.next
-        print(disp.strip('--> '))
+from linked_list import LinkedList, Node
 
 def insert_nodes(count: int) -> LinkedList:
     list = LinkedList()
