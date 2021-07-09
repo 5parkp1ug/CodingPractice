@@ -1,5 +1,5 @@
 # Linked list class used everywhere else
-from messages import warning, info, success
+from messages import warning, info, success, error
 
 class Node:
 
