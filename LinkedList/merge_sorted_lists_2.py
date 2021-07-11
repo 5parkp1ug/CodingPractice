@@ -47,27 +47,27 @@ if __name__ == '__main__':
     head_node_a = Node(5)
     second_node_a = Node(10)
     third_node_a = Node(15)
-    fourth_node_a = Node(40)
-    # fifth_node_a = Node(32)
+    fourth_node_a = Node(30)
+    fifth_node_a = Node(32)
 
     list_a.head = head_node_a
     head_node_a.next = second_node_a
     second_node_a.next = third_node_a
     third_node_a.next = fourth_node_a
-    # fourth_node_a.next = fifth_node_a
+    fourth_node_a.next = fifth_node_a
     
     list_b = LinkedList()
     head_node_b = Node(2)
     second_node_b = Node(3)
     third_node_b = Node(20)
-    # fourth_node_b = Node(25)
-    # fifth_node_b = Node(28)
+    fourth_node_b = Node(25)
+    fifth_node_b = Node(28)
 
     list_b.head = head_node_b
     head_node_b.next = second_node_b
     second_node_b.next = third_node_b
-    # third_node_b.next = fourth_node_b
-    # fourth_node_b.next = fifth_node_b
+    third_node_b.next = fourth_node_b
+    fourth_node_b.next = fifth_node_b
 
     list_a.traverse()
     list_b.traverse()
