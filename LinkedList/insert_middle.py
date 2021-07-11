@@ -32,7 +32,7 @@ if __name__ == '__main__':
     third_node.next = fourth_node
     fourth_node.next = fifth_node
     
-    print(info('List before deletion - '))
+    print(info('List before insertion - '))
     list.traverse()
 
     input_data = int(input('Enter the data to be inserted : '))
