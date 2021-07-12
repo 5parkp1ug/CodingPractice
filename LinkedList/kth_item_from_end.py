@@ -9,6 +9,9 @@ def find_kth_item(list: LinkedList, k: int) -> Node:
     # move last node to k elements forward
     count = 1
     while count <= k:
+        if not last_node:
+            print(error('k greater than list'))
+            exit()
         last_node = last_node.next
         count += 1
     
