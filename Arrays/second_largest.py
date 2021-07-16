@@ -1,6 +1,6 @@
 # ==============================================================================
 # Created By   : 5parkp1ug
-# Description  : Binary search
+# Description  : Find second largest element of an array
 # ==============================================================================
 
 def second_largest(arr: list) -> int:
